@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI客服网 - AI客服机器人专家</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9ff;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #007bff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .hero {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 150px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" onclick="scrollToSection('home')">首页</a>
+            <a href="#about" onclick="scrollToSection('about')">关于我们</a>
+            <a href="#features" onclick="scrollToSection('features')">核心功能</a>
+            <a href="#solutions" onclick="scrollToSection('solutions')">解决方案</a>
+            <a href="#contact" onclick="scrollToSection('contact')">联系我们</a>
+        </nav>
+    </header>
+    
+    <div id="home" class="hero section">
+        <h1>AI客服网 - 领先的AI客服解决方案</h1>
+        <p>提升客户服务体验，智能、高效、全天候。</p>
+    </div>
+
+    <div id="about" class="section">
+        <h2>关于我们</h2>
+        <p>AI客服网致力于提供最智能的客服解决方案，帮助企业优化客户服务体验，降低运营成本。</p>
+    </div>
+    
+    <div id="features" class="section">
+        <h2>核心功能</h2>
+        <ul>
+            <li>全天候智能客服响应</li>
+            <li>自然语言处理，提高交互体验</li>
+            <li>多平台集成，支持微信、网页、APP</li>
+        </ul>
+    </div>
+
+    <div id="solutions" class="section">
+        <h2>解决方案</h2>
+        <p>我们为电商、金融、医疗等多个行业提供专业AI客服服务，满足各类企业需求。</p>
+    </div>
+    
+    <div id="contact" class="section">
+        <h2>联系我们</h2>
+        <p>如需更多信息，请发送邮件至 <a href="mailto:contact@ai-customer.com">contact@ai-customer.com</a></p>
+    </div>
+    
+    <footer>
+        &copy; 2025 AI客服网 | <a href="https://ai-customer.com" style="color: #ffcc00; text-decoration: none;">ai-customer.com</a>
+    </footer>
+</body>
+</html>
